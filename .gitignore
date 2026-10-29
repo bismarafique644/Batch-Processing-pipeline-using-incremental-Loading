@@ -218,3 +218,51 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Project privacy and local artifacts
+# Local datasets and pipeline output may contain customer information.
+/data/
+# Power BI reports can embed datasets and connection metadata.
+*.pbix
+*.pbit
+
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+secrets/
+.secrets/
+credentials/
+.aws/
+.azure/
+.kaggle/
+kaggle.json
+credentials.json
+*service-account*.json
+bridge_token
+*.enc
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa*
+id_ed25519*
+
+# Generated files, environments, logs, and local databases
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+*.log
+logs/
+*.db
+*.sqlite*
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
